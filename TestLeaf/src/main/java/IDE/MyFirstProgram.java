@@ -29,6 +29,7 @@ public class MyFirstProgram {
   @Test
   public void testMyFirstRecording() throws Exception {
     driver.get(baseUrl + "/home.html");
+	  
     driver.findElement(By.cssSelector("img.wp-categories-icon.svg-image")).click();
     driver.findElement(By.id("email")).clear();
     driver.findElement(By.id("email")).sendKeys("gouthami423@gmail.com");
@@ -54,6 +55,8 @@ public class MyFirstProgram {
       fail(verificationErrorString);
     }
   }
+	
+	//boolean
 
   private boolean isElementPresent(By by) {
     try {
